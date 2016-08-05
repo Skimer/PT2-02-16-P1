@@ -26,8 +26,8 @@ for letter in L:
     if letter in vowels:
         count += 1
 print ('Number of vowels: ' + str(count))
-for index in range(len(L[18])):
-   print L[index]
+for index in range(18,len(L),18):
+   print index
 
 
 
