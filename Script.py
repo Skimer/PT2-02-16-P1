@@ -29,9 +29,8 @@ print ('Number of vowels: ' + str(count))
 for index in range(18,len(L),18):
     if L.isupper():
         L.lower()
-        if L.islower():
-            L.upper()
-    print index
+    else: L.upper()
+    print (str(index) + L[index])
 
 
 
