@@ -19,25 +19,11 @@ L = '''The Zen of Python, by Tim Peters
     If the implementation is hard to explain, it's a bad idea.
     If the implementation is easy to explain, it may be a good idea.
     Namespaces are one honking great idea -- let's do more of those!'''
-print ('Number of letters: ' + str(len(L)))
-count = 0
-vowels = set('aeiouAOEIU')
-for letter in L:
-    if letter in vowels:
-        count += 1
-print ('Number of vowels: ' + str(count))
-count = 0
-for index in range(0,len(L),1):
-    if index == index:
-        count =+ 1
-    print (str(count) + L[index])
-
-
-
-
-
-
-
-
-
-
+mystuff = {}
+for x in L:
+	if x in mystuff:
+		mystuff[x] = mystuff[x] + 1
+	else:
+		mystuff[x] = 1
+for key in sorted(mystuff):
+    print (key, mystuff[key])
