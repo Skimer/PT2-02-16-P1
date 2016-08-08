@@ -21,9 +21,11 @@ L = '''The Zen of Python, by Tim Peters
     Namespaces are one honking great idea -- let's do more of those!'''
 mystuff = {}
 for x in L:
-	if x in mystuff:
-		mystuff[x] = mystuff[x] + 1
-	else:
-		mystuff[x] = 1
+    if x in mystuff:
+        mystuff[x] = mystuff[x] + 1
+    else:
+        mystuff[x] = 1
+sortMystuff = sorted(mystuff.items(), key=lambda value: value[1])
+print(sortMystuff)
 for key in sorted(mystuff):
     print (key, mystuff[key])
