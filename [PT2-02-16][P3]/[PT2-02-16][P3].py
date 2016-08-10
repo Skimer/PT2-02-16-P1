@@ -2,11 +2,11 @@ someString = 'TEST string'
 
 def to_weird(string):
     new_string = ''
-    for i, val in enumerate(string):
-        if len(new_string) > 0 and new_string[i - 1].islower() == True:
-            new_string = new_string + val.upper()
+    for index, letter in enumerate(string):
+        if len(new_string) > 0 and new_string[index - 1].islower() == True:
+            new_string = new_string + letter.upper()
         else:
-            new_string = new_string + val.lower()
+            new_string = new_string + letter.lower()
 
     return new_string
 
