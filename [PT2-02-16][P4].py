@@ -1,4 +1,4 @@
-myString = "text with symbols!@#$^&*( ends here"
+myString = "text with syasadfs air mbolsasd a!@#$^&*( ends here"
 names = ['train', 'Train', 'Bus', 'Car', 'Airplane', 'Bike', 'Airport']
 
 def symbols(myString):
@@ -20,4 +20,4 @@ def mylist(newMyString, names):
         return new_list
 
 list = mylist(newMyString, names)
-print list
+print '', ''.join(list)
