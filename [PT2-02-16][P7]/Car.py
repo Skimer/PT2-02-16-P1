@@ -14,7 +14,6 @@ class Factory(object):
         self.price = price
         if not Factory.cars_created % 3:
             self.engine = 'diesel'
-            self.consumption = 6
             self.maximum_mileage = 150000
         if not Factory.cars_created % 5:
             self.tank = 75
@@ -25,8 +24,8 @@ for car in car_pool:
 
 
 class Route(object):
-
     def __init__(self, max_range=186000, min_range=29000):
+
         self.max_range = max_range
         self.min_range = min_range
 
@@ -39,7 +38,7 @@ print distance
 
 class Car(Factory):
 
-    def __init__(self, mileage, depreciation,):
+    def __init__(self, mileage, depreciation):
         super(self.__class__, self).__init__()
         self.mileage = mileage
         self.depreciation = depreciation
