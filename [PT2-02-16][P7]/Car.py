@@ -31,8 +31,8 @@ class Route(object):
     @staticmethod
     def distance(self):
         return random.randrange(self.min_range, self.max_range)
-a = Route.distance(Route())
-print a
+distance = Route.distance(Route())
+print distance
 
 
 class Car(Factory):
