@@ -1,6 +1,4 @@
 import random
-
-
 class Factory(object):
     cars_created = 0
 
@@ -24,6 +22,19 @@ for car in car_pool:
     print(car.__dict__)
 
 
+class Route(object):
+
+    def __init__(self, max_range=186000, min_range=29000):
+        self.max_range = max_range
+        self.min_range = min_range
+
+    @staticmethod
+    def distance(self):
+        return random.randrange(self.min_range, self.max_range)
+a = Route.distance(Route())
+print a
+
+
 class Car(Factory):
 
     def __init__(self, mileage, depreciation,):
@@ -33,5 +44,12 @@ class Car(Factory):
 
     def fill_tank(self):
         return self.tank
+
+
+
+
+
+
+
 
 
