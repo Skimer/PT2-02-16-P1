@@ -1,4 +1,6 @@
 import random
+
+
 class Factory(object):
     cars_created = 0
 
